@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TRAVEL BUFF</title>
+        <meta charset="utf-8">
+        <meta name="description" content="This is a website about Tourist attractions in Sri Lanka">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="8.02tickets.CSS">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+
+    </head>
+ <body>
+     <div class="ticketdetailscontainer">
+        <div class="innerdetailscontainers">
+          <h2>LOCAL PASS</h2>
+          <p class="pricingplancost">LKR 1000</p>
+          <p class="pricingplantext">Per Adult</p>
+          <br>
+          <p class="pricingplancost">LKR 500</p>
+          <p class="pricingplantext">Per Child</p>
+          <br>
+          <p class="pricingplantext">Conditions apply*</p>
+        </div>
+        <div class="innerdetailscontainers">
+          <h2>FOREIGN PASS</h2>
+          <p class="pricingplancost">LKR 5000</p>
+          <p class="pricingplantext">Per Adult</p>
+          <br>
+          <p class="pricingplancost">LKR 2500</p>
+          <p class="pricingplantext">Per Child</p>
+          <br>
+         <p class="pricingplantext">Conditions apply*</p>
+        </div>
+        <div class="innerdetailscontainers">
+          <h2>ANNUAL PASS</h2>
+          <p class="pricingplancost">LKR 500</p>
+          <p class="pricingplantext">Per Adult</p>
+          <br>
+          <p class="pricingplancost">LKR 250</p>
+          <p class="pricingplantext">Per Child</p>
+          <br>
+          <p class="pricingplantext">Conditions apply*</p>
+        </div>
+      </div>
+ 
+     <section class="bookingtickets">
+
+
+     <h1> Purchase Tickets</h1>
+
+    
+        <div class="bform" id="formbox">
+            <form  class="contact-col frmtickets" id="purchaseF">
+               
+                
+                <div class="Ibox">
+                    <select name="cmbChoice" id="cmbChoice" class="select__item" onchange="calculateCost();">
+                        <option value="" selected disabled>Select Ticket Catagory</option>
+                        <option value="0">Day pass</option>
+                        <option value="1">Student pass</option>
+                        <option value="2">Foreigner Pass</option>
+                    </select>
+                </div>
+                <div class="Ibox">
+                    <select name="cmbDuratiom" id="cmbDuratiom" class="select__item" onchange="calculateCost();">
+                        <option value="" selected disabled>Select the duration</option>
+                        <option value="0">3 hours</option>
+                        <option value="1">½ day</option>
+                        <option value="2">full day</option>
+                        <option value="3">2 days</option>
+                    </select>
+                </div>
+                
+                <div class="flexb" id="ticketamts">
+                    <div class="Ibox">  
+                    <input id="adultNo" name="adultNo" min="0" type="number" placeholder="Enter Number of Adults" onblur="calculateCost();">
+                    </div>
+                    <div class="Ibox">
+                        <input id="childNo" name="childNo" min="0" type="number" placeholder="Enter Number of Children" onblur="calculateCost();">
+                    </div>
+                </div>
+                <label for="date" class="checkindate">Input the check-in date.</label>
+                <div class="Ibox">
+                    <input type="date" id="date"  name="date">
+                </div>
+
+                <label for="date" class=""><a href="javascript:void(0)" class=" showHide" onclick='showHide();' >Show/Hide Extra Items</a> </label>
+                <div id="itemsextra">
+                <div class="flexb"  >
+                    <div class="Ibox">
+                        <input id="passesNo" name="passesNo" min="0" type="number" placeholder="Enter Number of Passes" onblur="calculateCost();" >
+                    </div>
+
+                    <div class="Ibox">
+                        <input id="tokensNo" name="tokensNo" min="0" type="number" placeholder="Enter Number of Tokens" onblur="calculateCost();">
+                    </div>
+                </div>
+                 </div>
+                <div class="alert" style="display: none;"></div>
+                <p id="currentOrder"> Current order cost : LKR <span id="spCost">0.00</span></p>
+                <div class="" id="localStorage">
+                    <input  id="addFavourite" type="button" value="Add to favourites" class="">
+                    <input id="retriveFavourite" type="button" value="Order favourite" class="">
+                </div>
+                    
+                
+                <input id="Addtoorder" type="button" value="Add to Order" class="submit-btn">
+
+                <div id="orderDiv" >
+                <table id="tableOrder" style="display: none;" >
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Adult</th>
+                                <th>Children</th>
+                                <th>Date</th>
+                                <th>Duration</th>
+                                <th>Total</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="tb_order"></tbody>
+                        <tfoot>
+                            <tr id="tbldivider">
+                                <th colspan="4">Food Tokens</th>
+                                <th colspan="1" id="thFtokens">0</th>
+                                <th colspan="1" id="pthFtokens">0.00</th>
+                                <th colspan="1"><a href='javascript:void(0)' style='color:red;font-weight:bold' onclick='removeFoodTokens();'><img src ='images/trash-bin.png' id ='trashBin' alt ='trashbin' ></a></th>
+                            </tr>
+                            <tr id="">
+                                <th colspan="4">Annual Passes</th>
+                                <th colspan="1" id="thApasses">0</th>
+                                <th colspan="1" id="pthApasses">0.00</th>
+                                <th colspan="1"><a href='javascript:void(0)' style='color:red;font-weight:bold' onclick='removeAnuualPasses();'><img src ='images/trash-bin.png' id ='trashBin' alt ='trashbin' ></a></th>
+                            </tr>
+                            <tr id="tbldividerfinalvider-final">
+                                <th colspan="4">Grand Total</th>
+                                <th colspan="2" style="text-align: center;"> LKR <span id="thGrandTot">0.00</span></th>
+                                <th colspan="1"></th>
+                            </tr>
+                        </tfoot>
+                </table>
+                </div>
+
+                <input id="loyalityChecklity" type="button" value="Check Loyality" class="submit-btn" onclick="showLoyaltyPoints();">
+                <p id="orderOverallder">Cost of the Overall order : LKR <span id="overallGtotal">0.00</span></p>
+                <input id="orderPlaceer" type="button" value="Place Order" class="submit-btn">
+                
+            </form>
+        </div> 
+
+           
+        
+     </section>
+     <footer>
+        <a href="1.0index.html" style="text-decoration: none; ">Home</a>
+     </footer>
+      <script src="8.01tickets.js" ></script>
+  </body>
+</html>

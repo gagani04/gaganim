@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width",initial-scale=1>
+        <meta name="description" content="This is a website about Tourist attractions in Sri Lanka">
+        <title>Travel Buff</title>
+        <link rel="stylesheet" href="1.1styles.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body class="donatepg">
+        
+        <div class="form">
+            
+         <form method="post" action="//submit.form" onSubmit="return validateForm();">
+            <div style="max-width: 400px;">
+            </div>
+            <div style="padding-bottom: 18px;font-size : 24px;"> Donation</div>
+            <select name="donations" id="donations" style=" margin-left: 0; margin-right: 1%; width: 49%  ">Choose your catergory
+            <option value="wildlife">Wildlife</option>
+            <option value="marine">Marine</option>
+            <option value="cultural">Cultural</option>
+            </select>
+            <div style="display: flex; padding-bottom: 18px;max-width : 550px;">
+            <div style=" margin-left: 0; margin-right: 1%; width: 49%;">First name<br/>
+            <input type="text" id="data_2" name="data_2" style="max-width: 100%;" class="form-control"/>
+            </div>
+            <div style=" margin-left: 1%; margin-right: 0; width: 49%;">Last name<br/>
+            <input type="text" id="data_3" name="data_3" style="max-width: 100%;" class="form-control"/>
+            </div>
+            </div>
+            <div style="padding-bottom: 18px;">Donation Amount<span style="color: red;"> *</span><br/>
+            <span><input type="radio" id="data_5_0" name="data_5" value="100"/> 100/=</span><br/>
+            <span><input type="radio" id="data_5_1" name="data_5" value="250"/> 250/=</span><br/>
+            <span><input type="radio" id="data_5_2" name="data_5" value="500"/> 500/=</span><br/>
+            <span><input type="radio" id="data_5_3" name="data_5" value="1000"/> 1000/=</span><br/>
+            <span><input type="radio" id="data_5_4" name="data_5" value="2000"/> 2000/=</span><br/>
+            <span><input type="radio" id="data_5_5" name="data_5" value="2500"/> 2500/=</span><br/>
+            <span><input type="radio" id="data_5_6" name="data_5" value="5000"/> 5000/=</span><br/>
+            <span><input type="radio" id="data_5_7" name="data_5" value="10000"/> 10000/=</span><br/>
+            </div>
+            <div style="padding-bottom: 18px;">Full Address<br/>
+            <textarea id="data_6" false name="data_6" style="max-width : 550px;" rows="3" class="form-control"></textarea>
+            </div>
+            <div style="padding-bottom: 18px;">card holders name<br/>
+            <input type="text" id="data_7" name="data_7" style="max-width : 550px;" class="form-control"/>
+            </div>
+            <div style="padding-bottom: 18px;">Card No<br/>
+            <input type="text" id="data_8" name="data_8" style="max-width : 500px;" class="form-control"/ placeholder="1111-2222-3333-4444">
+            </div>
+            <div style="padding-bottom: 18px;">CVV<br/>
+            <input type="number" id="data_9" name="data_9" style="max-width : 300px;" class="form-control"/>
+            </div>
+            <button id="buttn">Donate</button>
+            <div id="popup" class="pop">
+
+  
+               <div class="popu">
+                 <span class="close">&times;</span>
+                 <p>Thank you for your donation.</p>
+               </div>
+             
+             </div>
+            
+         </form>
+
+        </div>
+        <footer>
+        </footer>
+        <script src="7.01donate.js"></script>
+    </body>
+</html>

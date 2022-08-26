@@ -1,0 +1,539 @@
+*{
+    margin:0;
+    padding: 10;
+ }
+ nav{
+     display: flex;
+     padding: 2% 6%;
+     justify-content: space-between;
+     align-items: center;
+ 
+ }
+ nav img{
+ 
+     width: 100px;
+     height: 100px;
+ 
+ }
+ .nav-links{
+     flex:1;
+     text-align:center;
+ 
+ }
+ 
+ .nav-links ul li{
+     list-style: none;
+     display: inline-block;
+     padding: 8px 12px;
+     position: relative;
+ 
+ }
+ .nav-links {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .nav-links a {
+    float: left;
+    color: #0c0b0b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .nav-links a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .nav-links a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  .parallax {
+    /* The image used */
+    background-image: url('images/1.webp');
+  
+    /* Full height */
+    height: 80%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .text-box{
+      height: 600px;
+      padding: 100px;
+  }
+  @media only screen and (max-device-width: 1024px) {
+      .parallax {
+          background-attachment: scroll;
+      }
+  }
+  #header{
+   text-align: center;
+   font-size: 50px;
+   color: white;
+   position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    left: 50%;
+  }
+  #header1{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    position: absolute;
+     top: 50%;
+     -webkit-transform: translateY(50%);
+     -ms-transform: translateY(50%);
+     transform: translateY(50%);
+     left: 60%;
+   }
+   a {
+    float: left;
+    color: #0c0b0b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+ 
+
+h1{
+    font-size: 40px;
+}
+  
+h6{
+    font-style: italic;
+    font-size: 20px;
+}
+p{
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 10px;
+}
+.row{
+    margin-top: 5%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.subone{
+    flex-basis: 32%;
+    background: burlywood;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 50px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+
+}
+.subone:hover{
+    box-shadow: 0 0 20px 0px black;
+}
+ol,ul{
+    font-style: italic;
+}
+
+#header-2{
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  position: absolute;
+   top: 80%;
+   -webkit-transform: translateY(50%);
+   -ms-transform: translateY(50%);
+   transform: translateY(50%);
+   left: 20%;
+ }
+
+.parallax1 {
+    /* The image used */
+    background-image: url('images/WILDLIFEMAIN.webp');
+  
+    /* Full height */
+    height: 80%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .text-box{
+      height: 60px;
+      padding: 10px;
+  }
+  @media only screen and (max-device-width: 1024px) {
+      .parallax {
+          background-attachment: scroll;
+      }
+  }
+  .parallax2 {
+    /* The image used */
+    background-image: url('images/beaches\ nav.webp');
+  
+    /* Full height */
+    height:100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .text-box{
+      height: 600px;
+      padding: 100px;
+  }
+  @media only screen and (max-device-width: 1024px) {
+      .parallax {
+          background-attachment: scroll;
+      }
+  }
+  .parallax3 {
+    /* The image used */
+    background-image: url('images/11.webp');
+  
+    /* Full height */
+    height:100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .text-box{
+      height: 600px;
+      padding: 100px;
+  }
+  .parallax4 {
+    /* The image used */
+    background-image: url('images/heritagemain.webp');
+  
+    /* Full height */
+    height:100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .text-box{
+      height: 600px;
+      padding: 100px;
+  }
+  table{
+    text-align: center;
+  }
+  th, td {
+    padding: 15px;
+  }
+  th:nth-child(1),td:nth-child(1) {
+    border-style: solid;
+  }
+  th:nth-child(2),td:nth-child(2) {
+    border-style: solid;
+  }
+  
+  .container {
+    position: relative;
+    width: 50%;
+  }
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    opacity: 80%;
+  }
+  .container:hover .overlay {
+    width: 100%;
+    left: 0;
+  }
+  .text {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+  .parallax5 {
+    /* The image used */
+    background-image: url('images/p&dmain.jpg');
+  
+    /* Full height */
+    height:100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .text-box{
+      height: 600px;
+      padding: 100px;
+  }
+  div.gallery {
+    border: 1px solid #ccc;
+  }
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+  .button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+  } 
+  .button3:hover {
+    background-color: #f44336;
+    color: white;
+  }
+  .button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  }
+  
+  .button4:hover {
+    background-color: BLACK;
+    color: white;
+  }
+    /*yala national park style*/
+    .animals{
+      width: 100%;
+      height: auto;
+      background: white;
+      display: flex;
+    }
+    .animalcontainer1{
+     width: 350px;
+     height: 400px;
+     background: darkslategray;
+     margin: 20px;
+     color: white;
+    }
+    .map{
+      margin-top: 20px;
+    }
+    /*Wildlife page table*/
+table, th, tr, td{
+  border: solid white 1px;
+  margin-left: 10px;
+  background: burlywood;
+  color: white;
+}
+table{
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.wildtable{
+  overflow-x: auto;
+}
+
+
+.pic{
+  width: 400px;
+}
+.tdpic img{
+  width: 350px;
+  height: 200px;
+  margin: 10px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+table th{
+  height: 50px;
+}
+
+    /*Donation form styling*/
+.donatepg{
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  background: silver;
+  padding: 10px;
+
+}
+.form{
+  max-width: 700px;
+  width: 100%;
+  background: white;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+.formheading{
+  font-size: 25px;
+  font-weight: 500;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=radio] {
+ 
+  margin-top: 6px;
+  margin-bottom: 16px;
+  background: none;
+  color: black;
+  padding: 10px;
+}
+input[type=checkbox] {
+  font-size: 30px;
+}
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.pop {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+}
+
+.popu {
+  background-color: #0c0b0b;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid burlywood;
+}
+
+.close{
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus{
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+}
+
+@media (max-width: 548px) {
+  .form{
+    max-width: 100%;
+  }
+}

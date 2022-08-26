@@ -1,0 +1,326 @@
+/*ticket details-stlying flexboxes*/
+
+.ticketdetailscontainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    
+  }
+  
+  .innerdetailscontainers{
+    padding: 20px;
+    margin-left: 13%;
+    border: black;
+    background: burlywood;
+    justify-content: center;
+    align-items: center;
+    border: 5px;
+    color: #fff;
+    
+  }
+   .innerdetailscontainers h2{
+     text-decoration: underline;
+     color: black;
+   }
+
+/*ticket form styling*/
+
+  .ticket_booking{
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+    padding-bottom: 50px;
+    box-shadow: 0 0 40px 0px rgba(16, 65, 2, 0.274);
+    background-color: rgba(195, 255, 195, 0.11);
+    border-radius: 30px;
+    
+}
+
+
+
+
+.ticket_booking h1{
+   text-align: center;
+   padding-top: 30px;
+}
+
+.ticket_booking p{
+    font-size: 20px;
+    
+   
+    
+}
+.ticket_booking h1 , .ticket_booking p{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    
+
+}
+
+  .bform{
+    background-color: burlywood;
+    box-shadow: 0 0 20px 0px rgba(222, 184, 135, 0.151);
+    overflow: hidden;
+    padding: 20px;
+    width: 100%;
+    padding-top: 20px;
+    margin: auto;
+    margin-bottom: 25px;
+    transition: 1s;
+    margin-top: 30px;
+    float: right;
+}
+
+.bform form input {
+    
+    margin: auto;
+    padding: 10px;
+    outline: none;
+    border: 1px solid white;
+
+}
+
+.bform form p{
+    
+    border: solid 2px white ;
+    border-radius: 30px;
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 20px;
+    
+    
+}
+
+.contact-col div{
+    margin-bottom: 25px;
+}
+
+
+.bform form{
+    margin: auto;
+    padding: 0px;
+    width: 75%;
+
+}
+.bform  form .iBox{
+    margin-top: 0px;
+}
+
+.bform form .iBox span{
+    display: block;
+    color:white;
+    
+}
+
+
+.bform form .flexb .iBox span{
+    display: block;
+    color:burlywood;
+    
+}
+
+
+
+.bform form .iBox input,
+.bform form .iBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid rgba(0,0,0,.3);
+    color:white;
+    background: black;
+}
+
+.bform form .iBox select{
+    padding: 2px;
+}
+.bform  form .flexb{
+    display: flex;
+    gap:15px;
+}
+
+.bform form .flexb .iBox{
+    flex:1 1 50px;
+}
+
+.bform  form .submit-btn{
+    width: 100%;
+    margin-left: 0%;
+    padding: 0%;
+    display:flexb;
+    text-align: center; 
+    background:burlywood;
+    margin-top: 0px;
+    padding: 13px;
+    font-size: 20px;
+    color:#fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s linear;
+    vertical-align: middle;
+}
+
+.bform  form .submit-btn:hover{
+    letter-spacing: 2px;
+    opacity: .8;
+
+
+}
+
+
+.checkindate{
+    display: block;
+    color: white;
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 20.5px;
+}
+
+#itemsextra{
+    margin-top: 15px;
+}
+
+#output{
+    margin-top: 10px;
+}
+
+
+
+
+
+#summury-table {
+    display: none;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    padding: 2px;
+    margin-top: 30px;
+    
+  }
+#summury-table tr th{
+    width: 240px;
+}
+
+#tbldivider{
+    border-top: solid white 3px;
+}
+
+#tbldividerfinalvider-final{
+    border-top: solid white 6px;
+    border-bottom:solid white 6px;
+}
+
+
+
+
+#orderDiv {
+  margin: auto;
+  padding: 7px;
+  margin-top: 10px;
+  
+}
+
+#localStorage{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+    
+}
+
+#addFavourite, #retriveFavourite{
+    display: inline-block;
+    width: 100%;
+    flex-basis: 49%;
+    background:burlywood;
+    color:#fff;
+    border-radius: 10px;
+    transition: 1s;
+    
+    
+}
+
+#addFavourite{
+    padding: 15px;
+}
+
+#retriveFavourite{
+    padding: 15px;
+}
+
+#addFavourite:hover{
+    letter-spacing: 2px;
+    opacity: .8;
+
+
+}
+
+#retriveFavourite:hover{
+    letter-spacing: 2px;
+    opacity: .8;
+
+
+}
+
+#loyalityChecklity{
+    margin-bottom: 20px;
+}
+
+
+.showHide:link, .showHide:visited {
+    background-color:burlywood;
+    color: white;
+    width: 60%;
+    padding-top: 6px;
+    font-size: 18px;
+    padding-bottom: 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: white solid 1px;
+    border-radius: 10px;
+  }
+  
+  .showHide:hover, .showHide:active {
+    background-color: rgba(222, 184, 135, 0.632);
+    color: black;
+  }
+
+  #currentOrder{
+      margin-top: 15px;
+  }
+
+
+  #orderOverallder , #currentOrder {
+    font-style:initial;
+  }
+
+  .alert{
+      text-align: center;
+      width: 100%;
+      padding: 8px;
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 20px;
+      border: white 3px  solid;
+      border-radius: 20px;
+      outline-width: 3px;
+      outline-color: white;
+      opacity: 80%;
+      
+
+  }
+
+#trashBin{
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    max-height: 30px;
+    max-width: 30px;
+    position: relative;
+    display: block;
+}
+
